@@ -1,4 +1,4 @@
-// Type definitions for express-handlebars
+// Type definitions for express-handlebars-es6
 // Project: https://github.com/ericf/express-handlebars
 // Definitions by: Sam Saint-Pettersen <https://github.com/stpettersens>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
