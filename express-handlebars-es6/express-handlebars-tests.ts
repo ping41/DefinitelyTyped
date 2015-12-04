@@ -1,9 +1,9 @@
 /// <reference path="../node/node.d.ts" />
 /// <reference path="../express/express.d.ts" />
-/// <reference path="express-handlebars.d.ts" />
+/// <reference path="express-handlebars-es6.d.ts" />
 
 import express = require('express');
-import exphbs = require('express-handlebars');
+import exphbs = require('express-handlebars-es6');
 
 var app = express();
 var hbs: Exphbs = exphbs.create({defaultLayout: 'main'});

@@ -39,7 +39,7 @@ interface Exphbs {
     renderView(viewPath: string, optionsOrCallback: any, callback?: () => string): void;
 }
 
-declare module "express-handlebars" {
+declare module "express-handlebars-es6" {
     var exphbs: Exphbs;
     export = exphbs;
 }
