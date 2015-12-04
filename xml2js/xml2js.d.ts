@@ -50,7 +50,7 @@ declare module 'xml2js' {
         interface Options {
             async?: boolean;
             attrkey?: string;
-            attrNameProcessors?: (name: string) => string;
+            attrNameProcessors?: [(name: string) => string];
             charkey?: string;
             charsAsChildren?: boolean;
             childkey?: string;
@@ -68,6 +68,7 @@ declare module 'xml2js' {
             trim?: boolean;
             validator?: Function;
             xmlns?: boolean;
+            preserveChildrenOrder?: boolean;
         }
     }
 }
