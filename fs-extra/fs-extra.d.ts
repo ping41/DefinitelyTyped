@@ -42,7 +42,12 @@ declare module "fs-extra" {
 
 	//extended methods
 	export function copy(src: string, dest: string, callback?: (err: Error) => void): void;
-	export function copy(src: string, dest: string, filter: (src: string) => boolean, callback?: (err: Error) => void): void;
+    //export function copy(src: string, dest: string, filter: (src: string) => boolean, callback?: (err: Error) => void): void;
+    export function copy(src: string, dest: string, options: {
+        clobber?: boolean,
+        preserveTimestamps?: boolean,
+        filter?: (src: string) => boolean|RegExp
+    }, callback?: (err: Error) => void): void;
 
 	export function copySync(src: string, dest: string): void;
 	export function copySync(src: string, dest: string, filter: (src: string) => boolean): void;
